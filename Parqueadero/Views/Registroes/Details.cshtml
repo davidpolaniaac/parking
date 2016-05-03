@@ -1,0 +1,58 @@
+﻿@model Parqueadero.Models.Registro
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Registro</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Placa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Placa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaEntrada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaEntrada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            Pendiente
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Servicio.NombreServcio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Servicio.NombreServcio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Parqueadero.Models.TipoVehiculo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Tipo de vehiculo</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreVehiculo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreVehiculo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdVehiculo }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdVehiculo }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdVehiculo })
+        </td>
+    </tr>
+}
+
+</table>

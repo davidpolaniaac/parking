@@ -1,0 +1,50 @@
+﻿@model Parqueadero.Models.Servicio
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Servicio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreServcio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreServcio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Costo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Costo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoVehiculo.NombreVehiculo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoVehiculo.NombreVehiculo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdServicio }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
