@@ -5,7 +5,7 @@
 *.cscfg text
 *.csdef text
 *.xml text
-*.js text
+#*.js text
 
 *.csproj text merge=union
 *.fsproj text merge=union
